@@ -1,0 +1,11 @@
+teacher(ram, cs101).
+teacher(sita, cs102).
+
+student(raj, cs101).
+student(anu, cs102).
+
+teaches(Teacher, Student) :-
+    teacher(Teacher,Sub),
+    student(Student,Sub).
+
+?- teaches(ram,raj).
