@@ -1,0 +1,10 @@
+a.
+b :- a.
+c :- b.
+
+prove :-
+    c,
+    write('Goal achieved using forward chaining').
+
+
+?- prove.
