@@ -1,0 +1,12 @@
+edge(a,b).
+edge(a,c).
+edge(b,d).
+
+bestfs(X) :-
+    write(X), nl,
+    edge(X,Y),
+    bestfs(Y).
+bestfs(_).
+
+
+?- bestfs(a).
