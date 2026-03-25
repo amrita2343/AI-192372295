@@ -1,0 +1,13 @@
+symptom(fever).
+symptom(cough).
+
+disease(flu) :-
+    symptom(fever),
+    symptom(cough).
+
+diagnose :-
+    disease(X),
+    write('Disease is: '), write(X).
+
+
+?- diagnose.
