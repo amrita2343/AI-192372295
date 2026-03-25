@@ -1,0 +1,12 @@
+parent(ram, sita).
+parent(sita, gita).
+
+grandparent(X,Y) :-
+    parent(X,Z),
+    parent(Z,Y).
+
+show_gp(X,Y) :-
+    grandparent(X,Y),
+    write(X), write(' is grandparent of '), write(Y).
+
+?- show_gp(ram,gita).
