@@ -1,0 +1,9 @@
+can_move(monkey, box).
+can_climb(monkey).
+
+get_banana :-
+    can_move(monkey,box),
+    can_climb(monkey),
+    write('Monkey reaches banana').
+
+?- get_banana.
