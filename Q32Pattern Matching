@@ -1,0 +1,8 @@
+match(X,X).
+
+check_match(A,B) :-
+    match(A,B),
+    write('Match successful').
+
+
+?- check_match(cat,cat).
