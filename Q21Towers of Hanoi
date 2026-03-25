@@ -1,0 +1,11 @@
+hanoi(1,X,Y,_) :-
+    write('Move disk from '), write(X), write(' to '), write(Y), nl.
+
+hanoi(N,X,Y,Z) :-
+    N > 1,
+    N1 is N-1,
+    hanoi(N1,X,Z,Y),
+    hanoi(1,X,Y,Z),
+    hanoi(N1,Z,Y,X).
+
+?- hanoi(3,a,b,c).
