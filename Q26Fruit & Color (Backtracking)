@@ -1,0 +1,12 @@
+fruit(apple, red).
+fruit(banana, yellow).
+fruit(grapes, green).
+
+find_color(Color) :-
+    fruit(Fruit,Color),
+    write(Fruit), write(' is '), write(Color), nl,
+    fail.
+find_color(_).
+
+
+?- find_color(red).
