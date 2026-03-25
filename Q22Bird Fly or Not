@@ -1,0 +1,14 @@
+bird(parrot).
+bird(ostrich).
+
+can_fly(parrot).
+
+check_fly(Bird) :-
+    can_fly(Bird),
+    write(Bird), write(' can fly').
+
+check_fly(Bird) :-
+    \+ can_fly(Bird),
+    write(Bird), write(' cannot fly').
+
+?- check_fly(ostrich).
