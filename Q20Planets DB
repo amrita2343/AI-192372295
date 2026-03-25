@@ -1,0 +1,9 @@
+planet(earth, terrestrial).
+planet(mars, terrestrial).
+planet(jupiter, gas_giant).
+
+show_planet(Name) :-
+    planet(Name,Type),
+    write(Name), write(' is a '), write(Type).
+
+?- show_planet(jupiter).
