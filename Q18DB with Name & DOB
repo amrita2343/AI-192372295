@@ -1,0 +1,8 @@
+person(riya, '01-01-2000').
+person(rita, '05-06-2001').
+
+show_dob(Name) :-
+    person(Name,DOB),
+    write(Name), write(' DOB is '), write(DOB).
+
+?- show_dob(riya).
