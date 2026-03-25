@@ -1,0 +1,10 @@
+diet(diabetes, low_sugar).
+diet(obesity, low_fat).
+diet(bp, low_salt).
+
+suggest_diet(Disease) :-
+    diet(Disease,Food),
+    write('Recommended diet: '), write(Food).
+
+
+?- suggest_diet(diabetes).
