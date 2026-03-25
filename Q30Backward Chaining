@@ -1,0 +1,10 @@
+goal :- b.
+b :- a.
+a.
+
+check :-
+    goal,
+    write('Goal achieved using backward chaining').
+
+
+?- check.
